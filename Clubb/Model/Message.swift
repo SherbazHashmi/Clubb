@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class Message : Communication {
+    
+    var reciever : User
+    
+    init (sender : User, time : NSDate, content : String, reciever : User) {
+        self.reciever = reciever
+        super .init(sender: sender, time: time, content: content)
+    }
+    
+    
+    func getReciever () -> User {
+        return reciever
+    }
+    
+}

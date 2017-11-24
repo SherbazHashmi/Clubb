@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+class Communication {
+    
+    var sender : User
+    var time : NSDate
+    var content : String
+    
+    init(sender : User, time : NSDate, content : String) {
+        self.sender = sender
+        self.time = time
+        self.content = content
+    }
+    
+    func getContent () -> String{
+        return content
+    }
+    
+    func getTime () -> NSDate {
+        return time
+    }
+    
+    func getSender () -> User {
+        return sender
+    }
+    
+    
+    
+}

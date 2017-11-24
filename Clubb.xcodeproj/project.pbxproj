@@ -15,6 +15,12 @@
 		3C7B75531FC85A3100AF85AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B75511FC85A3100AF85AA /* LaunchScreen.storyboard */; };
 		3C7B755E1FC85A3100AF85AA /* ClubbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B755D1FC85A3100AF85AA /* ClubbTests.swift */; };
 		3C7B75691FC85A3100AF85AA /* ClubbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75681FC85A3100AF85AA /* ClubbUITests.swift */; };
+		3C7B757A1FC85F6F00AF85AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75791FC85F6F00AF85AA /* User.swift */; };
+		3C7B757C1FC85F8000AF85AA /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B757B1FC85F8000AF85AA /* Club.swift */; };
+		3C7B75801FC8614C00AF85AA /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B757F1FC8614C00AF85AA /* Communication.swift */; };
+		3C7B75821FC8635800AF85AA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75811FC8635800AF85AA /* Message.swift */; };
+		3C7B75841FC8650600AF85AA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75831FC8650600AF85AA /* Post.swift */; };
+		3C7B75861FC86B4D00AF85AA /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75851FC86B4D00AF85AA /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		3C7B75641FC85A3100AF85AA /* ClubbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClubbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B75681FC85A3100AF85AA /* ClubbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubbUITests.swift; sourceTree = "<group>"; };
 		3C7B756A1FC85A3100AF85AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7B75791FC85F6F00AF85AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C7B757B1FC85F8000AF85AA /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		3C7B757F1FC8614C00AF85AA /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		3C7B75811FC8635800AF85AA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3C7B75831FC8650600AF85AA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3C7B75851FC86B4D00AF85AA /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +111,10 @@
 		3C7B75441FC85A3100AF85AA /* Clubb */ = {
 			isa = PBXGroup;
 			children = (
-				3C7B75451FC85A3100AF85AA /* AppDelegate.swift */,
-				3C7B75471FC85A3100AF85AA /* ViewController.swift */,
-				3C7B75491FC85A3100AF85AA /* Main.storyboard */,
 				3C7B754F1FC85A3100AF85AA /* Assets.xcassets */,
-				3C7B75511FC85A3100AF85AA /* LaunchScreen.storyboard */,
+				3C7B75781FC85A7200AF85AA /* Model */,
+				3C7B75771FC85A6E00AF85AA /* View */,
+				3C7B75761FC85A6300AF85AA /* Controller */,
 				3C7B75541FC85A3100AF85AA /* Info.plist */,
 				3C7B754C1FC85A3100AF85AA /* Clubb.xcdatamodeld */,
 			);
@@ -126,6 +137,37 @@
 				3C7B756A1FC85A3100AF85AA /* Info.plist */,
 			);
 			path = ClubbUITests;
+			sourceTree = "<group>";
+		};
+		3C7B75761FC85A6300AF85AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B75511FC85A3100AF85AA /* LaunchScreen.storyboard */,
+				3C7B75491FC85A3100AF85AA /* Main.storyboard */,
+				3C7B75471FC85A3100AF85AA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3C7B75771FC85A6E00AF85AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C7B75781FC85A7200AF85AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B75451FC85A3100AF85AA /* AppDelegate.swift */,
+				3C7B75791FC85F6F00AF85AA /* User.swift */,
+				3C7B757B1FC85F8000AF85AA /* Club.swift */,
+				3C7B757F1FC8614C00AF85AA /* Communication.swift */,
+				3C7B75811FC8635800AF85AA /* Message.swift */,
+				3C7B75831FC8650600AF85AA /* Post.swift */,
+				3C7B75851FC86B4D00AF85AA /* Comment.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7B757A1FC85F6F00AF85AA /* User.swift in Sources */,
 				3C7B75481FC85A3100AF85AA /* ViewController.swift in Sources */,
+				3C7B75801FC8614C00AF85AA /* Communication.swift in Sources */,
+				3C7B75841FC8650600AF85AA /* Post.swift in Sources */,
+				3C7B757C1FC85F8000AF85AA /* Club.swift in Sources */,
 				3C7B75461FC85A3100AF85AA /* AppDelegate.swift in Sources */,
 				3C7B754E1FC85A3100AF85AA /* Clubb.xcdatamodeld in Sources */,
+				3C7B75861FC86B4D00AF85AA /* Comment.swift in Sources */,
+				3C7B75821FC8635800AF85AA /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

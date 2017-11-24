@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Comment : Communication {
+    
+    var relatedPost : Post
+    
+    override init(sender: User, time: NSDate, content: String, relatedPost : Post) {
+        self.relatedPost = relatedPost
+        super.init(sender: sender, time: time, content: content)
+    }
+    
+}
