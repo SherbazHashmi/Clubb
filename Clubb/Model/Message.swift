@@ -10,16 +10,26 @@ import Foundation
 
 class Message : Communication {
     
-    var reciever : User
+    var isClubChat : Bool
+    var reciever : User?
+    var club : Club?
     
-    init (sender : User, time : NSDate, content : String, reciever : User) {
-        self.reciever = reciever
-        super .init(sender: sender, time: time, content: content)
+    init (sender : User, time : NSDate, content : String, reciever : User?, isClubChat : Bool, club : Club) {
+        self.isClubChat = isClubChat;
+        
+        if (isClubChat == true) {
+            self.club = club
+        } else {
+            self.reciever = reciever
+        }
+        super.init(sender: sender, time: time, content: content)
     }
     
     
-    func getReciever () -> User {
-        return reciever
+    
+    
+    func getReciever () -> User? {
+            return reciever;
     }
     
 }
