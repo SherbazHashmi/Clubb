@@ -10,8 +10,10 @@
 		3996CF41829B1FBB7FE9E5C7 /* Pods_ClubbTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F3C44D0A684D721B6284CB /* Pods_ClubbTests.framework */; };
 		3C6C3CFA1FC91A2A00491BE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C3CF91FC91A2A00491BE5 /* GoogleService-Info.plist */; };
 		3C6C3CFC1FC91ED300491BE5 /* testUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3CFB1FC91ED300491BE5 /* testUser.swift */; };
+		3C6C3D001FC9400F00491BE5 /* DropScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3CFF1FC9400F00491BE5 /* DropScreen.swift */; };
+		3C6C3D021FC9408B00491BE5 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D011FC9408B00491BE5 /* SignUpScreen.swift */; };
+		3C6C3D041FC940C500491BE5 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D031FC940C500491BE5 /* SignInScreen.swift */; };
 		3C7B75461FC85A3100AF85AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75451FC85A3100AF85AA /* AppDelegate.swift */; };
-		3C7B75481FC85A3100AF85AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75471FC85A3100AF85AA /* ViewController.swift */; };
 		3C7B754B1FC85A3100AF85AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B75491FC85A3100AF85AA /* Main.storyboard */; };
 		3C7B754E1FC85A3100AF85AA /* Clubb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B754C1FC85A3100AF85AA /* Clubb.xcdatamodeld */; };
 		3C7B75501FC85A3100AF85AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B754F1FC85A3100AF85AA /* Assets.xcassets */; };
@@ -48,9 +50,11 @@
 		0019D322661D36FB5B1A3C4E /* Pods-ClubbUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClubbUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClubbUITests/Pods-ClubbUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3C6C3CF91FC91A2A00491BE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C6C3CFB1FC91ED300491BE5 /* testUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUser.swift; sourceTree = "<group>"; };
+		3C6C3CFF1FC9400F00491BE5 /* DropScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropScreen.swift; sourceTree = "<group>"; };
+		3C6C3D011FC9408B00491BE5 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		3C6C3D031FC940C500491BE5 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		3C7B75421FC85A3100AF85AA /* Clubb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B75451FC85A3100AF85AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C7B75471FC85A3100AF85AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C7B754A1FC85A3100AF85AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C7B754D1FC85A3100AF85AA /* Clubb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clubb.xcdatamodel; sourceTree = "<group>"; };
 		3C7B754F1FC85A3100AF85AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -187,7 +191,9 @@
 			children = (
 				3C7B75511FC85A3100AF85AA /* LaunchScreen.storyboard */,
 				3C7B75491FC85A3100AF85AA /* Main.storyboard */,
-				3C7B75471FC85A3100AF85AA /* ViewController.swift */,
+				3C6C3CFF1FC9400F00491BE5 /* DropScreen.swift */,
+				3C6C3D011FC9408B00491BE5 /* SignUpScreen.swift */,
+				3C6C3D031FC940C500491BE5 /* SignInScreen.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,10 +516,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7B757A1FC85F6F00AF85AA /* User.swift in Sources */,
-				3C7B75481FC85A3100AF85AA /* ViewController.swift in Sources */,
 				3C7B75801FC8614C00AF85AA /* Communication.swift in Sources */,
 				3C7B75841FC8650600AF85AA /* Post.swift in Sources */,
+				3C6C3D041FC940C500491BE5 /* SignInScreen.swift in Sources */,
+				3C6C3D001FC9400F00491BE5 /* DropScreen.swift in Sources */,
 				3C7B757C1FC85F8000AF85AA /* Club.swift in Sources */,
+				3C6C3D021FC9408B00491BE5 /* SignUpScreen.swift in Sources */,
 				3C7B75461FC85A3100AF85AA /* AppDelegate.swift in Sources */,
 				3C7B754E1FC85A3100AF85AA /* Clubb.xcdatamodeld in Sources */,
 				3C7B75861FC86B4D00AF85AA /* Comment.swift in Sources */,

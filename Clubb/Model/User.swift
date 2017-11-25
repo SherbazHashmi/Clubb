@@ -7,17 +7,20 @@
 //
 
 import Foundation
+
 public class User : Equatable {
     var firstName : String
     var lastName : String
     var uID : String
     var clubs = Array<Club>()
+    var university : String;
     
-    init(firstName : String, lastName : String, uID : String, clubs : Array<Club>){
+    init(firstName : String, lastName : String, uID : String, clubs : Array<Club>, university : String){
         self.firstName = firstName
         self.lastName = lastName
         self.uID = uID
         self.clubs = clubs
+        self.university = university;
     }
     
     
@@ -75,6 +78,10 @@ public class User : Equatable {
     }
     
     
+    func getUniversity () -> String {
+        return university;
+    }
+    
     
     func addToDB () {
         
@@ -90,7 +97,7 @@ public class User : Equatable {
         prefix.uID == postfix.uID
         &&
         prefix.clubs == postfix.clubs
+        &&
+        prefix.university == postfix.university
     }
-    
-    
 }
