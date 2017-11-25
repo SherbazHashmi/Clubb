@@ -5,6 +5,9 @@
 //  Created by Sherbaz Hashmi on 25/11/17.
 //  Copyright © 2017 Sherbaz Hashmi. All rights reserved.
 //
+// Potential Optimisations : Instead of having a list of clubs, have a list of club ids so even if the
+// clubs change, the user won't have outdated information on the club and comparison operations will
+// take much less time.
 
 import Foundation
 

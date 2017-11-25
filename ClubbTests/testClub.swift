@@ -21,7 +21,7 @@ class testClub: XCTestCase {
         super.tearDown()
     }
     
-    
+    // TODO : This.
     func testAddMember () {
         let clubs = Array<Club>()
         
