@@ -7,8 +7,7 @@
 //
 
 import Foundation
-class User {
-    
+public class User : Equatable {
     var firstName : String
     var lastName : String
     var uID : String
@@ -21,9 +20,23 @@ class User {
         self.clubs = clubs
     }
     
+    
+    /*
+     addClub appends the clubs.
+     Input : Club
+     Output : Void
+     */
+    
+    
     func addClub (club : Club) {
         clubs.append(club);
     }
+    
+    /*
+     Input : The element(s) you wish to change, the ones to remain the same should be nill.
+     Output : Void, changes element in class.
+ 
+     */
     
     func changeElement (modFirstName : String?, modLastName : String?, modUID: String?) {
         if (modFirstName != nil) {
@@ -40,18 +53,44 @@ class User {
     }
     
     
-    // Input : Main Get Function
-    // Output element from class
-    func getProperty (property : String) -> Any? {
-        switch property {
-        case "uID": return uID
-        case "lastName": return lastName
-        case "firstName": return firstName
-        case "clubs" : return clubs
-        default : return nil
-        }
+    // Input : String describing desired element from class.
+    // Output : Chosen element from class or nil.
+    // Example : person.getUID() -> u632322
+    
+    
+    func getFirstName() -> String {
+        return firstName;
     }
     
+    func getUID() -> String {
+        return uID;
+    }
+    
+    func getLastName() -> String {
+        return lastName;
+    }
+    
+    func getClubs () -> Array<Club> {
+        return clubs;
+    }
+    
+    
+    
+    func addToDB () {
+        
+    }
+    
+    
+    public static func == (prefix : User, postfix : User) -> Bool{
+        return
+        prefix.firstName == postfix.firstName
+        &&
+        prefix.lastName == postfix.lastName
+        &&
+        prefix.uID == postfix.uID
+        &&
+        prefix.clubs == postfix.clubs
+    }
     
     
 }

@@ -8,23 +8,46 @@
 
 import Foundation
 
-class Club {
+class Club : Equatable, CustomStringConvertible {
     
     var name : String
-    var description : String
+    var desc : String
     var president : User
     var vicePresident : User
     var treasurer : User
     
     var id : Int
     
-    init(name : String, id : Int, description : String, president : User, treasurer : User, vicePresident : User) {
+    init(name : String, id : Int, desc : String, president : User, treasurer : User, vicePresident : User) {
         self.name = name
         self.id = id
-        self.description = description
+        self.desc = desc
         self.president = president
         self.vicePresident = vicePresident
         self.treasurer = treasurer
     }
+    
+    public static func == (prefix : Club, postfix : Club) -> Bool {
+        return
+        prefix.desc == postfix.desc
+        &&
+        prefix.id == postfix.id
+        &&
+        prefix.name == postfix.name
+        &&
+        prefix.president == postfix.president
+        &&
+        prefix.treasurer == postfix.treasurer
+        &&
+        prefix.vicePresident == postfix.vicePresident
+        
+    }
+    
+    public var description : String {
+        return name
+    }
+    
+    
+     
     
 }
