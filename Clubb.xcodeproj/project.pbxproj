@@ -13,6 +13,10 @@
 		3C6C3D001FC9400F00491BE5 /* DropScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3CFF1FC9400F00491BE5 /* DropScreen.swift */; };
 		3C6C3D021FC9408B00491BE5 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D011FC9408B00491BE5 /* SignUpScreen.swift */; };
 		3C6C3D041FC940C500491BE5 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D031FC940C500491BE5 /* SignInScreen.swift */; };
+		3C6C3D0A1FC9455100491BE5 /* testClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D091FC9455100491BE5 /* testClub.swift */; };
+		3C6C3D0C1FC945C800491BE5 /* testPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D0B1FC945C800491BE5 /* testPost.swift */; };
+		3C6C3D0E1FC945D200491BE5 /* testMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D0D1FC945D200491BE5 /* testMessage.swift */; };
+		3C6C3D101FC945E100491BE5 /* testComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C3D0F1FC945E100491BE5 /* testComment.swift */; };
 		3C7B75461FC85A3100AF85AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B75451FC85A3100AF85AA /* AppDelegate.swift */; };
 		3C7B754B1FC85A3100AF85AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B75491FC85A3100AF85AA /* Main.storyboard */; };
 		3C7B754E1FC85A3100AF85AA /* Clubb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B754C1FC85A3100AF85AA /* Clubb.xcdatamodeld */; };
@@ -53,6 +57,10 @@
 		3C6C3CFF1FC9400F00491BE5 /* DropScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropScreen.swift; sourceTree = "<group>"; };
 		3C6C3D011FC9408B00491BE5 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		3C6C3D031FC940C500491BE5 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		3C6C3D091FC9455100491BE5 /* testClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testClub.swift; sourceTree = "<group>"; };
+		3C6C3D0B1FC945C800491BE5 /* testPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testPost.swift; sourceTree = "<group>"; };
+		3C6C3D0D1FC945D200491BE5 /* testMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMessage.swift; sourceTree = "<group>"; };
+		3C6C3D0F1FC945E100491BE5 /* testComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testComment.swift; sourceTree = "<group>"; };
 		3C7B75421FC85A3100AF85AA /* Clubb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7B75451FC85A3100AF85AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C7B754A1FC85A3100AF85AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +181,10 @@
 			children = (
 				3C7B755F1FC85A3100AF85AA /* Info.plist */,
 				3C6C3CFB1FC91ED300491BE5 /* testUser.swift */,
+				3C6C3D091FC9455100491BE5 /* testClub.swift */,
+				3C6C3D0B1FC945C800491BE5 /* testPost.swift */,
+				3C6C3D0D1FC945D200491BE5 /* testMessage.swift */,
+				3C6C3D0F1FC945E100491BE5 /* testComment.swift */,
 			);
 			path = ClubbTests;
 			sourceTree = "<group>";
@@ -534,6 +546,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6C3CFC1FC91ED300491BE5 /* testUser.swift in Sources */,
+				3C6C3D0E1FC945D200491BE5 /* testMessage.swift in Sources */,
+				3C6C3D0C1FC945C800491BE5 /* testPost.swift in Sources */,
+				3C6C3D0A1FC9455100491BE5 /* testClub.swift in Sources */,
+				3C6C3D101FC945E100491BE5 /* testComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

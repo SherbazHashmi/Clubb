@@ -26,7 +26,7 @@ class testUser: XCTestCase {
     func testGetUID () {
         
         
-        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs)
+        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs, university : "Australian National University")
         
         
         let expected = "u6409914"
@@ -39,8 +39,7 @@ class testUser: XCTestCase {
     func testGetFirstName () {
     
         
-        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs)
-        
+        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs, university : "Australian National University")
         
         let expected = "Sherbaz"
         let actual = sherbaz.getFirstName()
@@ -52,7 +51,7 @@ class testUser: XCTestCase {
     func testGetLastName () {
         
         
-        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs)
+        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs, university : "Australian National University")
         
         
         let expected = "Hashmi"
@@ -64,7 +63,8 @@ class testUser: XCTestCase {
     
     func testClubs () {
         
-        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs)
+        let sherbaz = User(firstName: "Sherbaz", lastName: "Hashmi", uID: "u6409914", clubs: clubs, university : "Australian National University")
+        
         let GSC = Club(name: "Guitar Service Club", id: 0, desc: "Description", president: sherbaz, treasurer: sherbaz, vicePresident: sherbaz)
         
         sherbaz.addClub(club: GSC)
@@ -86,16 +86,6 @@ class testUser: XCTestCase {
         ()
         assert(actual == expected, "Expected be : Guitar Service Club but actual : "+rtn)
         
-    }
-    
-    
-    
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
     }
     
 }

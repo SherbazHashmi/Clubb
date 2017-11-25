@@ -11,8 +11,6 @@ import UIKit
 class DropScreen : UIViewController {
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
