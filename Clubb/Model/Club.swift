@@ -12,15 +12,19 @@ class Club {
     
     var name : String
     var description : String
-    var leader : User
+    var president : User
+    var vicePresident : User
+    var treasurer : User
+    
     var id : Int
     
-    init(name : String, id : Int, description : String, leader : User) {
+    init(name : String, id : Int, description : String, president : User, treasurer : User, vicePresident : User) {
         self.name = name
         self.id = id
-          self.description = description
-        self.leader = leader
-      
+        self.description = description
+        self.president = president
+        self.vicePresident = vicePresident
+        self.treasurer = treasurer
     }
     
 }

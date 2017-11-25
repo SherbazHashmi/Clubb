@@ -26,8 +26,6 @@ class Message : Communication {
     }
     
     
-    
-    
     func getReciever () -> User? {
             return reciever;
     }
